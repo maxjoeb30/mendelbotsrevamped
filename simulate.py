@@ -11,6 +11,10 @@ physicsClient = p.connect(p.GUI)
 #Create a list for use in the for loop
 forlooplist = 1000
 
+#Read in the simulated world environment from box.sdf
+p.loadSDF("box.sdf")
+
+
 for i in range(forlooplist):
     p.stepSimulation()
     time.sleep(1/60)
